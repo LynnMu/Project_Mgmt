@@ -19,4 +19,6 @@ Tools and utilities for managing group projects.
 
 4-Create repos, adding each team, their proposal, and a generic README
 
+    NOTE: not currently set up to copy proposals
+
     SETUP - NEEDS RUNNING
