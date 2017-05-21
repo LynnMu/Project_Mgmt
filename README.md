@@ -23,6 +23,4 @@ The current set-up plan is to create repos, adding the group members, with a gen
 
 4-Create repos, adding each team, their proposal, and a generic README
 
-    NOTE: not currently set up to copy proposals
-
     SETUP - NEEDS RUNNING
