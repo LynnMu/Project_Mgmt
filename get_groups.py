@@ -8,6 +8,7 @@ import json
 ##########################################################################################
 
 FILE_DIR = '/Users/thomasdonoghue/Desktop/A4/'
+GR_DIR = '/Users/thomasdonoghue/Desktop/Groups/'
 
 ##########################################################################################
 ##########################################################################################
@@ -43,6 +44,18 @@ def main():
 
         n_students += len(cur_group)
         groups[cur_name] = cur_group
+
+        ## Copy over proposal to group directory
+
+        # Create group specific directory, move notebook into it
+        os.mkdir(os.path.join(GR_DIR, cur_name))
+        os.rename(os.path.join(FILE_DIR, nb_file),
+                  os.path.join(GR_DIR, cur_name, 'ProjectProposal.ipynb'))
+
+        # Create txt file with group memberships
+        with open(os.path.join(GR_DIR, cur_name, cur_name + '.txt'), 'w') as fp:
+            for student in cur_group:
+                fp.write(student + '\n')
 
     n_groups = len(groups)
 
