@@ -1,0 +1,11 @@
+1-Download all Proposals
+    DONE
+
+2-Extract all project group memberships
+    DONE
+
+3-Add all students to COGS108 as Members
+
+4-Create teams on COGS108 of project groups
+
+5-Create repos, adding each team, their proposal, and a generic README
