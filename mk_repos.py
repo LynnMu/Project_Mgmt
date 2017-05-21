@@ -1,5 +1,6 @@
 """Create repos for project groups on Github."""
 
+import os
 import json
 import base64
 from auth import *
@@ -8,6 +9,7 @@ from auth import *
 ##########################################################################################
 
 TEAM_IDS_FILE = ''
+GR_DIR = ''
 
 README_CONTENT = """   """
 README_CONTENT = str(base64.b64encode(bytes(README_CONTENT, 'utf-8')))[2:-1]
@@ -61,9 +63,8 @@ def main():
 
         ## ADD GROUP PROPOSAL
 
+        group_nb_file = os.path.join(GR_DIR, group, 'ProjectProposal.ipynb')
         proposal_content = ''
-        # TODO: SET GROUP NB FILE
-        group_nb_file = ''
         with open(group_nb_file, 'r') as nbf:
             for line in nbf:
                 proposal_content += line
