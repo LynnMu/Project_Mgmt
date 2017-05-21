@@ -9,8 +9,8 @@ from auth import *
 
 TEAM_IDS_FILE = ''
 
-README_CONTENT = ''
-README_CONTENT = base64.b64encode(README_CONTENT)
+README_CONTENT = """   """
+README_CONTENT = str(base64.b64encode(bytes(README_CONTENT, 'utf-8')))[2:-1]
 
 ##########################################################################################
 ##########################################################################################
@@ -43,6 +43,8 @@ def main():
         out = subprocess.run(['curl', '-XPOST', '-H', auth, repos_url, '-d', repo_dat],
                              stdout=subprocess.PIPE)
 
+        ## ADD README FILE
+
         # Initialzie URL to add a README file
         readme_url = 'https://api.github.com/repos/COGS108/' + \
                      repo_name + '/contents/README.md'
@@ -54,7 +56,31 @@ def main():
                      '"content":"' + README_CONTENT + '"}'
 
         # Add README file to group project repo
-        subprocess.run(['curl', '-i', '-X', 'PUT', '-H', auth, '-d', repo_dat, readme_url],
+        subprocess.run(['curl', '-i', '-X', 'PUT', '-H', auth, '-d', readme_dat, readme_url],
+                       stdout=subprocess.PIPE)
+
+        ## ADD GROUP PROPOSAL
+
+        proposal_content = ''
+        # TODO: SET GROUP NB FILE
+        group_nb_file = ''
+        with open(group_nb_file, 'r') as nbf:
+            for line in nbf:
+                proposal_content += line
+        proposal_content = str(base64.b64encode(bytes(contents, 'utf-8')))[2:-1]
+
+        # Initialzie URL to add a README file
+        proposal_url = 'https://api.github.com/repos/COGS108/' + \
+                     repo_name + '/contents/ProjectProposal.ipynb'
+
+        # Set up README data
+        proposal_dat = '{"path": "ProjectProposal.ipynb",' + \
+                     '"message":"Add proposal to project repo.",' + \
+                     '"committer":{"name":"Tom Donoghue", "email":"tdonoghue@ucsd.edu"},' + \
+                     '"content":"' + proposal_content + '"}'
+
+        # Add README file to group project repo
+        subprocess.run(['curl', '-i', '-X', 'PUT', '-H', auth, '-d', proposal_dat, proposal_url],
                        stdout=subprocess.PIPE)
 
 
