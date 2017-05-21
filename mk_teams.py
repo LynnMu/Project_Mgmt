@@ -50,7 +50,7 @@ def main():
                              '-d', team_params], stdout=subprocess.PIPE)
 
         # Get new team Github id, add to dictionary
-        team_id = json.loads(qq.stdout)['id']
+        team_id = json.loads(out.stdout)['id']
         teams_ids[group] = team_id
 
         # Add members to team

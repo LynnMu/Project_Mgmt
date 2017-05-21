@@ -54,7 +54,7 @@ def main():
                      '"content":"' + README_CONTENT + '"}'
 
         # Add README file to group project repo
-        subprocess.run(['curl', '-i', '-X', 'PUT', '-H', auth, '-d', repo_dat, repo_url],
+        subprocess.run(['curl', '-i', '-X', 'PUT', '-H', auth, '-d', repo_dat, readme_url],
                        stdout=subprocess.PIPE)
 
 
