@@ -10,7 +10,7 @@ from auth import *
 ##########################################################################################
 
 TEAM_IDS_FILE = 'team_ids.json'
-GR_DIR = '/Users/SP/Documents/05-COGS108/ProjectGroups/'
+GR_DIR = '/Users/thomasdonoghue/Desktop/Groups/'
 
 README_CONTENT = \
 """
@@ -45,13 +45,13 @@ def main():
     for group, team_id in teams.items():
 
         # Init repository name
-        repo_name = 'Pr_' + group[-3]
+        repo_name = 'Pr_' + group[-3:]
 
         # Set up repository information
         repo_dat = '{"name":"' + repo_name + '",' + \
                     '"description":"Project repo for ' + group + '",'+ \
                     '"private":true,' + \
-                    '"team_id":' + team_id + '}'
+                    '"team_id":' + str(team_id) + '}'
 
         # Create repository on COGS108
         out = subprocess.run(['curl', '-XPOST', '-H', auth, repos_url, '-d', repo_dat],
@@ -80,7 +80,7 @@ def main():
         with open(group_nb_file, 'r') as nbf:
             for line in nbf:
                 proposal_content += line
-        proposal_content = str(base64.b64encode(bytes(contents, 'utf-8')))[2:-1]
+        proposal_content = str(base64.b64encode(bytes(proposal_content, 'utf-8')))[2:-1]
 
         # Initialzie URL to add a README file
         proposal_url = 'https://api.github.com/repos/COGS108/' + \
