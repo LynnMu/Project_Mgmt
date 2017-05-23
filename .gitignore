@@ -1,2 +1,4 @@
 # Ignore file with authorization token
 auth.py
+# Ignore pycache
+__pycache__/*
