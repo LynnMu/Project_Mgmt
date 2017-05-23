@@ -7,8 +7,8 @@ from auth import *
 ##########################################################################################
 ##########################################################################################
 
-GIT_IDS_FILE = ''
-GROUPS_FILE = ''
+GIT_IDS_FILE = '/Users/SP/Documents/05-COGS108/108GitOrg/Utilities/grading/A1/git_ids.json'
+GROUPS_FILE = 'groups.json'
 
 ##########################################################################################
 ##########################################################################################
@@ -55,11 +55,11 @@ def main():
         teams_ids[group] = team_id
 
         # Add members to team
-        for member in members:
+        for mem_id in mem_ids:
 
             # Built the URL for current student and team
-            mem_url = 'https://api.github.com/teams/' + team_id + \
-                      '/memberships/' + github_accts[member]
+            mem_url = 'https://api.github.com/teams/' + str(team_id) + \
+                      '/memberships/' + mem_id
 
             # Add the current student to github team
             out = subprocess.run(['curl', '-XPUT', '-i', '-H', auth,  mem_url],
@@ -67,7 +67,7 @@ def main():
 
     # Save out team ids
     with open('team_ids.json', 'w') as fp:
-        json.dump(team_ids, fp, sort_keys=True, indent=2)
+        json.dump(teams_ids, fp, sort_keys=True, indent=2)
 
 
 if __name__ == "__main__":

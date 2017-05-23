@@ -7,8 +7,8 @@ import json
 ##########################################################################################
 ##########################################################################################
 
-FILE_DIR = '/Users/thomasdonoghue/Desktop/A4/'
-GR_DIR = '/Users/thomasdonoghue/Desktop/Groups/'
+FILE_DIR = '/Users/SP/Documents/05-COGS108/AssgnSubs/A4/'
+GR_DIR = '/Users/SP/Documents/05-COGS108/ProjectGroups/'
 
 ##########################################################################################
 ##########################################################################################
@@ -20,6 +20,7 @@ def main():
 
     files = os.listdir(FILE_DIR)
     nb_files = [f for f in files if '.ipynb' in f]
+    txt_files = [f for f in files if '.txt' in f]
 
     pattern = re.compile('[A,U]\d{8}')
 
@@ -56,6 +57,9 @@ def main():
         with open(os.path.join(GR_DIR, cur_name, cur_name + '.txt'), 'w') as fp:
             for student in cur_group:
                 fp.write(student + '\n')
+
+    for f in txt_files:
+        os.remove(os.path.join(FILE_DIR, f))
 
     n_groups = len(groups)
 
