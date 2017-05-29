@@ -11,7 +11,6 @@ The current set-up plan is to create repos, adding the group members, with a gen
 
 2-Extract all project group memberships
 
-3-Create teams on COGS108 of project groups
-    Creating teams will invite students to join COGS108 as Members
+3-Create teams on COGS108 of project groups (creating teams invites students to join COGS108 as Members)
 
 4-Create repos, adding each team, their proposal, and a generic README
