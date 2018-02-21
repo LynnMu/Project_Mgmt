@@ -1,4 +1,4 @@
-"""Extract Project Groups from COGS108 Assignment-4"""
+"""Extract Project Groups from COGS108 Project Proposals"""
 
 import os
 import re
@@ -7,8 +7,8 @@ import json
 ##########################################################################################
 ##########################################################################################
 
-FILE_DIR = '/Users/SP/Documents/05-COGS108/AssgnSubs/A4/'
-GR_DIR = '/Users/SP/Documents/05-COGS108/ProjectGroups/'
+FILE_DIR = '/Users/SP/Documents/05-COGS108/Projects/Proposals/'
+GR_DIR = '/Users/SP/Documents/05-COGS108/Projects/Groups/'
 
 ##########################################################################################
 ##########################################################################################
@@ -68,6 +68,8 @@ def main():
     # Check for any duplicate students (indicative of duplicate groups)
     if len(set(all_students)) != len(all_students):
         print('There are duplicated students!')
+        duplicates = set([el for el in all_students if all_students.count(el) > 1])
+        print(duplicates)
 
     # Save out group membership information
     with open('groups.json', 'w') as fp:
