@@ -1,0 +1,15 @@
+## Files used for managing projects in COGS 108
+
+File Descriptions:
+
+- `create_repos.ipynb` - generates private repos for COGS 108 groups; gives students write access; adds instructional staff to all repos
+- `Repos.Rmd` - accomplishes way too many things and needs to be updated
+  - for use to create a file that will be used throughout the quarter to map group-level grades to individuals
+  - checks if students have submitted their groups correctly and to identify students who have not signed up for a group.
+  - assigns previou projects for groups to review
+  - after `create_repos.ipynb`, adds templates to each group's repository
+  - generates some plots to show how close group's "grades" were to what grades were actually earned
+- `add_feedback.ipynb` - adds feedback as issue to each group's private repo for proposal, checkpoints, and final report/video
+- `projecess_finalproj.R` - to clone all final project notebooks and include in a single repo at the end of the quarter (only includes groups who opt-in to sharing publicly)
+
+- `ProjectGrading/` - contains notebooks used each quarter to check for agreement across graders

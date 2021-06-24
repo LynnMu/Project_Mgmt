@@ -1,0 +1,216 @@
+---
+title: "Repos"
+author: "Shannon Ellis"
+date: "1/27/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# here::here()
+
+library(tidyverse)
+library(googlesheets4)
+library(here)
+```
+
+## Group Projects
+
+Data read in are survey responses from students indicating who their group members are.
+
+```{r}
+#df <- read_csv('groups_wi20.csv')
+# get output from Google Form
+# Wi20 : 1qTtvz97D5xvhfg7P0E4DpykZGwyUygtNx0AjkfSoZxg
+# Sp20: 1J37-pPuL1ZwjceT_LBu8NpLB2IQBPf9Cpag-ZSaniOY
+# fa20: 14k1FBpAx19Ye4sEDQZ_xfQCIzabazvNxyVtjZqXvtSU
+# wi21: 1gwNbS0CcPrYt-HATSjGdedhdrPQhEKSKQsrkFJjxUIU
+# sp21
+df <- read_sheet("1Srmu1UmSlzjsUOCMWmslmwmY6svF0cCDDogv9-FLrfY")
+colnames(df) <-   c('timestamp', 'names', 'PIDs', 'GH', 'time', 'group','staff')
+df <- df %>% select(-c(timestamp))
+```
+
+## Get Individual-Level Data
+
+Breaks out data into individual level
+```{r}
+# For google sheet to determine how many in each group
+# =LEN(C2)-LEN(SUBSTITUTE(C2,",",""))+1
+
+# get individual level data
+ind_level <- separate_rows(df, names, PIDs, GH, sep = ',' , convert = TRUE)
+ind_level <- ind_level %>%
+  mutate_if(is.character, str_trim)
+
+# find duplicate entries
+ind_level[duplicated(ind_level$PIDs),]
+
+write_csv(ind_level, here('Project_Mgmt', 'ellis', 'data', 'gh_individ_sp21.csv'))
+```
+
+# Generate CSV 
+
+CSV to be used throghout the quarter when assigning indivdiual grades from group-level submissions.
+
+Update URL for roster (Canvas) and from blink below.
+
+Note: students could be on Canvas and no longer in the course due to it updating more slowly than blink roster.
+```{r}
+#make CSV for use with API
+gh_out <- ind_level %>% 
+  mutate(team = paste0("group",group)) %>%
+  select(login = GH, PID=PIDs, team)
+
+# class roster
+roster <- read_csv('~/Downloads/2021-05-03T0644_Grades-COGS108_SP21_A00.csv')
+blink <- read_csv(here('class_data', 'roster_cogs108_sp21.csv'))
+
+# determine who's not  on the roster (go fix mistyped PIDs)
+ind_level %>% filter(!PIDs %in% roster$`SIS User ID`)
+
+# determine who's not in a group
+blink %>% filter(!PID %in% ind_level$PIDs) %>% 
+  select(Student)
+
+# email these people
+ toemail <- blink %>% filter(!PID %in% ind_level$PIDs) %>% 
+  select(Student, Email) 
+
+toemail %>%
+  summarise(test = toString(Email)) %>%
+  ungroup() %>% 
+  pull()
+
+write_csv(gh_out, here('Project_Mgmt', 'ellis', 'data', 'gh_teams_sp21.csv'))
+```
+
+
+# Assign project to review
+
+Update `quarters` to include which quarters you want to pull projects from for students to review.
+
+Update `proj_n` to include the current quarter's project number.
+
+Note: Path to FinalProjects repo will have to be updated.
+
+```{r}
+quarters <- c('Wi18', 'Sp19', 'Wi20', 'Sp20', 'Fa20', 'Wi21')
+
+all_projects <- tibble(
+  quarter = character(),
+  project = character(),
+)
+
+proj_n = 66
+
+for(quarter in quarters){
+  a <- list.files(paste0('~/Desktop/Teaching/COGS108/FinalProjects-',quarter))
+  b <- bind_cols(quarter, a)
+  colnames(b) <- c('quarter', 'project')
+  all_projects <- bind_rows(all_projects, b ) %>% 
+    filter(project != "README.md")
+}
+
+set.seed(929)
+to_review <- sample_n(all_projects, proj_n)
+to_review <- to_review %>% 
+  mutate(URL = paste0('https://github.com/COGS108/FinalProjects-',quarter,'/blob/master/',project))
+
+write_csv(to_review, here('Project_Mgmt', 'ellis', 'data', 'to_review_sp21.csv'))
+```
+
+# add templates to repos
+
+This should be done after repos have been created. Be sure to update `proj_n` (current number of projects that quarter) and `quarter` which corresponds to project repos.
+
+```{r}
+proj_n = 68
+quarter = 'sp21'
+
+for(i in 2:proj_n){
+  group <- stringr::str_pad(i, 3, pad = "0")
+  file <- paste0('https://github.com/COGS108/group',group, '_', quarter, '.git')
+  template <- '/Users/shannonellis/Desktop/Teaching/COGS108/group_template'
+  folder <- paste0('group', group,'_', quarter, '/')
+  system(sprintf("git clone %s", file))
+  system(sprintf('cp %s/* %s', template, folder))
+  # rename file with group number
+  system(sprintf('for f in %s/*ipynb; do mv -i -- "$f" "${f//XXX/%s}"; done', folder, group))
+  setwd(folder)
+  system('git add . ')
+  system("git commit -m 'add template'")
+  system('git remote add origin %s', file, intern=FALSE, ignore.stdout=TRUE, ignore.stderr=TRUE, wait=TRUE)
+  system('git branch -M main')
+  system('git push -u origin main')
+  setwd('../')
+  system(sprintf('rm -rf %s', folder))
+}
+
+```
+
+
+# checking student given grades to grades awarded
+
+After students complete their reviews, I will share with them how close their "grades" were to what the group actually recieved.
+
+```{r}
+# wi18 i didn't actually teach
+# sp19 on gradescope
+
+to_review <- to_review %>% 
+  mutate(group = gsub("FinalProject_group", "", project),
+         group = gsub("_S", "", group),
+         group = gsub(".ipynb", "", group),
+         group_sp21 = stringr::str_pad(1:proj_n, 3, pad = "0"))
+
+# student reviews
+# wi21 1GzhuEDRqLG1GMOkzYBQW-R2E9eybtZvhswBOXW_GDFU
+# sp21
+reviews <- read_sheet("1csq3Yx6JV8Q6LeprdN20og15IL69c383wWEBw-lvE2o") %>%
+  select(group_sp21 = "What is your group number? (i.e. 010) This can be found on your group's assigned GitHub repository.",
+         grade = "If you were grading this project, what score (out of a possible 100 points) would you have awarded this project?") 
+
+reviews <- reviews %>% filter(!group_sp21 %in% c('012'))
+
+# student grades
+wi20 <- read_sheet("1Om_UPOcEW_aw4eWNOc_rEM-KPtJ9J5ASDPFWi5utrW0") %>%
+  filter(grader != "No Submission", grader != "example") %>% 
+  select(group, Total) %>% 
+  mutate(quarter = 'Wi20')
+sp20 <- read_sheet("1y5r89Haj3Vkt1iZAlP-HGBwAAZcOitP1wn7cuvqN2P0", col_types = "cccdddddddddcccc") %>% 
+  select(group=Group, Total) %>% 
+  mutate(quarter = 'Sp20')
+fa20 <- read_sheet("16rEBx9q2JyVP6GlcHXct4ZKToelFJb_GpcPxU9zpxV0") %>% 
+  select(group, Total) %>% 
+  mutate(quarter = 'Fa20')
+wi21 <- read_sheet("1LGkgauC0snzKn1RgZ_DghXnZ0c2GdQMvf1aFVlRQApY") %>% 
+  select(group = Group, Total) %>% 
+  mutate(quarter = 'Wi21')
+grades <- bind_rows(wi20,sp20,fa20,wi21)
+
+
+reviewed <- left_join(to_review, reviews, by = "group_sp21") %>% 
+  rename(grade_suggested = grade)
+
+df <- inner_join(reviewed, grades, by=c("quarter", "group"))
+
+ggplot(df, aes(x=Total, y=grade_suggested)) + 
+  geom_point(position="jitter") +
+  theme_classic(base_size = 16) +
+  xlim(70,100) +
+  ylim(70,100) +
+  labs(x = "Grade Received",
+       y = "Grade Suggested on Review")
+
+df %>% filter(Total>60) %>%
+  ggplot(., aes(x=Total, y=grade_suggested)) + 
+  geom_point(position="jitter") +
+  theme_classic(base_size = 16) +
+  xlim(70,100) +
+  ylim(70,100) +
+  labs(x = "Grade Received",
+       y = "Grade Suggested on Review")
+```
+
