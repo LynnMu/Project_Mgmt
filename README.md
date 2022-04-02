@@ -7,6 +7,13 @@ Each group will be created as a team on the COGS108 organization, and given a pr
 The current set-up plan is to create repos, adding the group members, with a generic README, and a copy of their project proposal. 
 
 ## Setup Instructions
+
+### Setting Up the Google Form
+
+1- See google_form_creation
+
+### After Students Complete the Google Form Submissions
+
 1-Download all Proposals
 
 2-Extract all project group memberships
