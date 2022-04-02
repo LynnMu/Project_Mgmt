@@ -1,0 +1,46 @@
+/**
+ * Auto-populate Question options in Google Forms
+ * from values in Google Spreadsheet
+ *
+ *
+ **/
+
+const populateCOGS118AGoogleForms = () => {
+  const GOOGLE_SHEET_NAME = "COGS 118A: Test Sheet";
+  const GOOGLE_FORM_ID = "1f7NrwnPOeefhM2DpcaA3P5ILVryrsI2Gj76J8ThSVWc";
+
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const sheet = ss.getSheetByName(GOOGLE_SHEET_NAME);
+  const [header, ...data] = ss
+    .getDataRange()
+    .getDisplayValues();
+
+  const choices = {};
+  header.forEach((title, i) => {
+    choices[title] = data.map((d) => d[i]).filter((e) => e);
+  });
+
+  FormApp.openById(GOOGLE_FORM_ID)
+    .getItems()
+    .map((item) => ({
+      item,
+      values: choices[item.getTitle()],
+    }))
+    .filter(({ values }) => values)
+    .forEach(({ item, values }) => {
+      switch (item.getType()) {
+        case FormApp.ItemType.CHECKBOX:
+          item.asCheckboxItem().setChoiceValues(values);
+          break;
+        case FormApp.ItemType.LIST:
+          item.asListItem().setChoiceValues(values);
+          break;
+        case FormApp.ItemType.MULTIPLE_CHOICE:
+          item.asMultipleChoiceItem().setChoiceValues(values);
+          break;
+        default:
+        // ignore item
+      }
+    });
+  ss.toast("Google Form Updated !!");
+};
