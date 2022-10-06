@@ -10,14 +10,14 @@ The current set-up plan is to create repos, adding the group members, with a gen
 
 ### Setting Up the Google Form
 
-1- See google_form_creation
+1. See google_form_creation
 
 ### After Students Complete the Google Form Submissions
 
-1-Download all Proposals
+2. Follow the logic in assign_project_groups.ipynb which will
 
-2-Extract all project group memberships
+    2a. Figure out who didn't signup
 
-3-Create teams on COGS108 of project groups (creating teams invites students to join COGS108 as Members)
-
-4-Create repos, adding each team, their proposal, and a generic README
+    2b. Assign non-signed up people to random groups
+    
+    2c. Create repos for each group, and give the students write access to their new repo
