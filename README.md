@@ -8,7 +8,7 @@ The current set-up plan is to create repos, adding the group members, with a gen
 
 ## Setup Instructions
 
-### Setting Up the Google Form
+### Setting Up the Google Form to collect student's self created project groups
 
 1. See google_form_creation
 
@@ -21,3 +21,5 @@ The current set-up plan is to create repos, adding the group members, with a gen
     2b. Assign non-signed up people to random groups
     
     2c. Create repos for each group, and give the students write access to their new repo
+    
+3. TAs will manually create project groups on Canvas (People->Groups) ... these groups are needed for group level grading.  In the future this should be automated from the script in step 2
