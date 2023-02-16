@@ -1,59 +1,48 @@
 group_name,names,sids,gitids,n_people
-Group000,"Ana Cunha, Kyra Hulse, Esmeralda Mejia-Trejo, Kimberly Johnson","A15990829, A15593181, A15667909",accunha11,3.0
-Group001,"Alan Cao, Robert Aispuro, Helen Zhao, Connie Chang, Shawn Kim","A16160244, A12086294, A15919169, A16651609, A15785021","alacau, DarksideRob, hszhao24, kyrni, sjk002",5.0
-Group002,"Bridget Egan, John Pyjar, Alex Tyler, Aryaman Sinha","A15769204, A16123651, A16542815, A15828821","alxtyl, bridge-exe, Aryamansinha2704, chefpy",4.0
-Group003,"Boning Yang, Chenhao Zhu, Anni Li, Muchan Li, Jason Chen","A16144196, A16142340, A16157145, A15887258, A16145513","boyang102,chzhu2000,AnniLi1212,Lord-of-Bugs,JasonC1217",5.0
-Group004,"Harini Adivikolanu, Isabella Gonzalez, Daniel Milton, Brandon Rocchio, Dhruva Kolikineni","A15834526, A15629890, A15599774, A15946726, A16681620","brocchio, Isa5805, danielmilton22, dhruva7102, hadiviko",5.0
-Group005,"Brandon Vazquez-Tellez, Vicky Chou, Hsi Chen, Adam Yoshinaga","A15615044, A15979236, A15852740, A15653817","AeRoBro, vchou105, hsc012, yossshhhh",4.0
-Group006,"Charles Ye, Thomas Fratantoni, Evan Eguchi, Matthew Nguyen, Zachary Tulman","A15864281, A15940388, A15495975, A16016485, A15642011","tfratant, ASuperior, evaneguchi, matthew-ucsd, Zachary-Tulman",5.0
-Group007,"Chao-Li Wei, Andrew Truong, Ted Feng, Ahmad Said, Chiadika Vincent","A16304263, A15587248, A15889396, A15578541, A15518219","chawei217, gnourtwerdna, tedfeng424, ahmads405, Chiadikav",5.0
-Group008,"Caitlin Connolly, Caike Salles-Campana, Abigail Koornwinder, Carolyn Yatco, Joshua Widjanarko","A15831721, A16555833, A16164029, A15959301, A15914233","caitlinsprojects-ml, csallesc,akoornwinder4,cyatco,WidjanarkoJoshua",5.0
-Group009,"Stefanie Dao, Yepeng Li, Matthew Chong, Cheng Chang, Tai Le","A15974899, A15390429, A16156411, A15548430, A15789906","StefanieDao, gelaneier, Matthewechong, chc012, tnl001",5.0
-Group010,"David Soberanis, Ernest Lin, Felipe Lorenzi, Shushruth Kallutla, John Harrison","A13619908, A16298428, A15561904, A15542022, A15641611","DavidSober, ernestl123, lorenzilipe, Shushruth007, Mrgnhrsn",5.0
-Group011,"Feifan Li, Shaolong Li, Rosy Xu, Zikang Chen, Cody Li","A15598129, A16159625, A15906914, A15941751, A16289926","shadowfall117, shli1126, yinyin0916, zic017, RecluseHermit",5.0
-Group012,"Gilberto Robles, Jason Sheu, Soyon Kim, Allan Tan","A15415579, A15536122, A16121832, A15403850","gilbertorobles24, jasonsheu, soyoybean, allantangent",4.0
-Group013,"Natalie Kwong, Prothit Halder, Nolan Chai, Gordon Ye","A15944830, A15851067, A16653842, A15812870","nataliekwong925, prorick, NolanChai, gordonyye",4.0
-Group014,"Jiayi Zhao, Beibei Du, Meijiang Shen, Hongfei Lyu, Shirui Huang","A15814036, A15830947, A16136515, A16149222, A15873275","vikizzz,Amandahuang0101,belladu0201,laveee,Meijiang0905",5.0
-Group015,"Kimberly Liu, Ruoxuan Li, Juan Castillejos-Garcia, Manan Surana","A16147364, A16151137, A12395340, A15611311","LJW0105, jjcggarciajuan, TomlandHilarious, suranamanan",4.0
-Group016,"Satomi Ito, Boyong Liu, Joakim Nguyen, Wilson Tan, Pudan Xu","A16157881, A15912868, A15384622, A15100620, A15124486","satomitheito, LBY777, joakimawesome, WilsJT, PudanXu",5.0
-Group017,"Brian Chu, Jisu Kim, Taekyu Lee, Richard Li","A16358262, A16175342, A16574894, A15476705","bchu-ops, jik003, ethanl94, riyli",4.0
-Group018,"Jaikishan Mali, Emmanuel Gutierrez, Hector Gallo, Arturo Sorensen, Marco Paredes","A15951200, A15769736, A16132582, A15834453, A15951023","Jai-M9, e1gutier, Hgallocodes, artusor, marcopared",5.0
-Group019,"Jordyn Ohashi, David Thai, Daniel Byers, Nicholas Nassour, Yu Pan","A15532256, A16138351, A15396367, A16138137, A15557426","jjohashi,dzthai,NicholasNassour,dbyers15,mikeheheda",5.0
-Group020,"Wei Zhong, Jota Yamaguchi, Josie Li, Mary Kovic, David Wang","A15568452, A15581388, A15924327, A15292606, A16035204","joxieli613, Bootpocalypse, Marykovic, WeiZ321, Jyamaguc",5.0
-Group021,"Daniel Renteria, Jonathan Park, Eun Lee, Suebeen Noh, Franklin Le","A15956888, A15961172, A16136652, A16133481, A16545549","jspark0002, esl001, franklinle, suebeen2001, DantheCoolMan",5.0
-Group022,"Jota Yamaguchi, Josie Li, David Wang, Wei Zhong, Mary Kovic","A15581388, A15924327, A16035204, A15568452, A15292606",,5.0
-Group023,"Kevin De Silva Jayasinghe, Alex Tsatryan, Ramy Al-Hosri, Efrain Contreras, Madison Hambly","A15795955, A15940266, A15399822, A15584748, A16625551","kevdesilva01, alext-prog, SuperKomi, EfrainContreras-ucsd, Mhambly",5.0
-Group024,"Jasmine Qiang, Drake Coy, Simran Nayyar, Aditi Krishnakumar, Luke Sztajnkrycer","A16135714, A15881357, A15913026, A15914778, A15941703","jasqiang, DrakeCoy, simrannayyar, Aditikk00, lsztajnkrycer",5.0
-Group025,"Lillian Wood, Merel Van-Den-Bos, Alex Rivera, Albert Aung","A15468781, A17255695, A15197982, A16040416","lilly-pad, merelvdbs, ajrivera721, zmaung19",4.0
-Group026,"Shengjie Mao, Mengyu Zhang, Yufei Deng, Dylan Nelson","A15531892, A15543086, A15540658","zmyzmyzmy, ShengjieMao, Yukodeng",3.0
-Group027,"Darren Wu, Dina Dehaini, Stephanie Kwan, Amy Hardy, Nicholas Hale","A15936118, A16606023, A15535490, A16558949, A15974307","NickHale01, DarrenWu42, dinadehaini, stephaniekwan, amyhardy",5.0
-Group028,"Borja Vega-Lojo, Kalid Ade, Sujay Srinivasan, Pablo Moreno, Jared Chen","A16569859, A15559312, A15589845, A16112358, A15908895","Pmoreno629, kade09, oakaigh, SujaySri, bvegaloj",5.0
-Group029,"Paayal Desai, Harry Lei, Andy Ly, Brian Wong, Ming Qiu","A15512966, A15890785, A10710024, A15546683, A16602805","pndesai2000, Zijie-Lei, ayiply, bkwong315, MingQiu99",5.0
-Group030,"Ryan Burden, Rey Mendoza, Terence Ting, Joshua Garcia","A15596301, A15596424, A15467441","ryanbbb,reymendoza111,Terence2018",3.0
-Group031,"Tianze Zhang, Brian Ripley, Rachel Doron, Yohan Kim, Rahul Ravi","A16133129, A14967234, A15861108, A16554060, A17174059","rdoron, rravi3, brip, zterryy, kmyohan0",5.0
-Group032,"Rich Liu, Kareema Kilani, Abigail Sawtell, Joshua Suh, Ramsey Cervantes","A13140565, A16575023, A15577890, A15493247, A15567107","rich-liu,KareemaKilani,Abisawtell,suhjoshua,RamseyCervantes",5.0
-Group033,"Samuel Schwartz, Campbell Moco, Ryan Desmond, Christopher Molina, Esmeralda Mejia-Trejo","A15562332, A16127310, A15405481, A15429191, A15667909","kyumin14, locomoco1313, ryandesmond1104, chrismolina986, emejiatr",5.0
-Group034,"Shenghao Weng, Xianglong Wang, Jiying Wang, Shihan Qian","A15597338, A15584153, A15827560, A15854684","Paulimorphism, xiw019, zlsjClaire, Annieqian02",4.0
-Group035,"Sharai Barrera, Gina Ocegueda, Victorionna Tran, Zytal Lenus, Kelly Chang","A15889783, A15652608, A14826174, A15398132, A16406092","ssbarrera, vctrnna , zlenus, angrybeanz, gocegued",5.0
-Group036,"Samuel Woo, Kyle Moore, Javon Maxie, Sebastian Balica, John Pyjar","A15961073, A14271413, A15529501, A15396318, A16123651","samuel-d-woo, kylechristophermoore, TheRealMambaz",5.0
-Group037,"Rizq Khateeb, Charmie Donasco, Michael Lai, William Wei, Siu Wu","A15848068, A15660577, A15596210, A16137249, A15402897","rkhateeb, cdonasco, MikecraftA, IsAria233, SiuWu",5.0
-Group038,"Ingrid Altamirano, Thanh Bui, Zura Nebieridze, Janty Sphabmixay, Tristan Romanov","A15501970, A16551772, A16635130, A14096653, A16040362","itsjanty, zuraneb, ingridalt, t7bui, romanov360",5.0
-Group039,"Muhan He, Ziheng Chen, Qianxi Gong, Tianyu Yu","A15480974, A15935048, A15986849, A16149145","Tianyu-Yu, Cheersbbg,  cozic, Muhan He",4.0
-Group040,"William Lynch, Lazar Katanic, Gordon Chiu, Hwi Yeo, Ryan Kim","A14588777, A15492724, A16583457, A16082500, A16556796","wrblynch, lkatanic, hwiyeo, RynaK1, gordon1213",5.0
-Group041,"William Sumerfield, Miguel Monares, Ritik Raina, Abdalla Atalla, Matilda Michel","A15652060, A15674188, A15539379, A16612653, A15205228","mxnares,rainarit,WillSumerfield,mhm1117,abdalla-atalla",5.0
-Group042,"Yunyi Huang, Luning Yang, Annie Fan, Xiangyi Kong, Xing Hong","A15813745, A16158834, A15932544, A16138343, A15867895","TIMHX, Luning-Yang, yunyihuang, AnnieeeeeF, 3XiangyiKong3",5.0
-Group043,"Xue Wang, Cain Chen, Hongxin Song, Zhigang Lin, Jinghong Luo","A15908778, A15894106, A15910661, A16035855, A15527340","NicoloWX, CainChen1,  h3song, ileolin3, fjkal23jk",5.0
-Group044,"Yiyang Cao, Pu Tan, Zixu Wang, Zefang Yuan","A15433234, A15508176, A16074550, A15559636","yiyang-cao, pu-tan, NioOunt, ZefangYuan",4.0
-Group045,"Zheran Li, Duye Liu, Yiyao Liu, Ryan Choi, Bohan Lei","A15474039, A16601637, A16314015, A16404890, A15473837","AlphaAmeame, dududubingbong, Zheran-Li, ywchoi02, YiyaoL ",5.0
-Group046,"Yikai Mao, Xiqiang Liu, Lian Lumada, Hongzhang Shi, Mincheng Wang","A15887137, A15860116, A15131176, A16573776, A15593933","akai820, xiqiangliu, LianLumada, shz42, MChengW",5.0
-Group047,"Robert Zhang, Lingxi Li, Man Sit, Jianghua Lu, Yvonne Luo","A16239963, A14892649, A17148723, A16580934, A15832882","robertzhang0531,nickuncaged1201,whybruhh,Jianghualu,YLuo0216",5.0
-Group048,"Yash Potdar, Gauri Samith, Maitrayee Keskar, Kyra Hulse","A15805085, A15828385, A15781563, A15593181","YashPotdar, GSam789, mmkeskar, kehulse",4.0
-Group049,"Ziheng Chen, Qianxi Gong, Muhan He, Tianyu Yu","A15935048, A15986849, A15480974, A16149145","Tianyu-Yu, Muhan He, cozic, Cheersbbg, z6sun",4.0
-Group050,"Bateliel Bassa, Jason Hsu, Kevin Thai, Katelyn Dang, Zhaoge Ouyang","A15631022, A16600088, A15466066, A15784965, A15405768","BatelielB,jhcode14,KevThai,katndang,garyouyang9449",5.0
-Group051,"Zeven Vidmar-Barker, Nawwar Tohme, Cameron Vandertuig, Jorge Acevedo","A15641421, A15659678, A15803073, A15834274","zvidmarb, TohmeNawwar, IRSMsoso, jorgeacevedo13, nickthegroot (Nicholas DeGroot - our 5th member, working out enrollment rn)",4.0
-Group052,"Xuhui Liu, Yescenia Alvarez, Dong Pham, Maxwell Jung, Carter Nielsen",,,
-Group053,"Cedric Wong, Nicholas Degroot, Ethan Black, Erlend Hordvei, Adam Alvord",,,
-Group054,"Jaime Altamirano-Ramirez, Alexander Huynh, Taylor Drennen, Aldair Olanda, Geoffrey Hand",,,
-Group055,"Jenny Vu, Girish Senthil, Maya Xu, Joshua Fierro, Grant Liu",,,
-Group056,"Xiaonan Fu, Victor Tran, Dima Musa, Megha Chouthai, James Callahan",,,
-Group057,"Peder Ditelv-Simonsen, Zhou Sun, Yimin Lu, Jalani Bowman",,,
+Group000,"Jacob Au, Evan Liu, Lauren Lui, Rina Kaura","A16341584, A16675674, A16657998, A16206086","jacobayu, EvanLiu0, laurennlui, rinakaura",4.0
+Group001,"Tunan Li, Gavin Zhao, Duy Vu, Tianyi Bian","A16129170, A16200230, A17190576, A16134259","LexuZhao, Tianyibian, TianjinTunan, quocduyvu6262",4.0
+Group002,"Anthony Truong, Brandon Kao, Akshat Mittal, Adi Krishnamoorthy","A17209279, A16683446, A15908924, A16742939","atruong39, Brandon028, AkshatMittal7, AK4032",4.0
+Group003,"Sujal Nahata, Hieu Pham, Angkitha Anguraj, Denny Yoo, Andres Villegas","A16495043, A16347157, A16660906, A16480259, A15917448","SujalN, hugompham, angkitha, dennyyoo1, av1929",5.0
+Group004,"Yongxi Liang, Zirui Lin, Ruoqian Huang, Yunhan Xiao, Ruoxin Li","A17151355, A16352835, A16489764, A16166274, A17151340","wincy02, Awu-Lin, RuoqianHuang, yunhan-xiao, Celeste-rx-L",5.0
+Group005,"Xiang Li, Xiaotong Zeng, Jiaxin Ye, Yandong Xiang","A16335965, A15960860, A16287976, A16629743","JackLiX0105, jiaxin-yeah, x6zeng, yandongxiang",4.0
+Group006,"Zhuotong Xie, Gaoying Wang, Sally Yu, Jiawen Wang","A16153086, A16131629, A16519059, A16830133","yushi20, Cocodayo, wgyyy, tomxienb",4.0
+Group007,"MJ Mei, Joshua Chen, Antonio Aldama, Janet Ruiz","A15825777, A16810747, A15780834, A15050976","Zaanis, janetar, MJ-git-maker, aaaldama",4.0
+Group008,"George Liu, Xinyao Yi, Yingnan Yang","A15836054, A59019592, A16018172","g9liu, IsLydia, xinyao-yi",3.0
+Group009,"Qiqing Li, Yutao Ye, Walter Qiu, Ellie Zou, Yaosen Zhang","A17146964, A17139018, A17167459, A17117056, A16161252","Nikki991018, leo-ye0, uswalter, Neb345, Ellie-Zou",5.0
+Group010,"Sidney Ma, Zhetai Zhou, Sarah Horne, Sean Rote, Kevin Su","A16496979, A15428825, A16658917, A17589873, A16632888","stma733, Cyuaz, SNHorne, seanrote, Kevinsu12",5.0
+Group011,"Joshua Kim, Seonghun Oh, Yewon Hong","A15612157, A17655174, A17192484","howonjoshua, seonghunnn, yewonh311",3.0
+Group012,"Isabella Anderson, Grant Duntugan, Jesse Sanchez-Villegas, Trent Barker","A15930676, A15830666, A15569627, A16468643","grantDuntugan, JesseSV, trent8800, isabellllaa",4.0
+Group013,"Jessica Perez, Abby Chang, Maya Beeri-Feldman, Ethan Chen","A15775285, A15633379, A16650164, A16739832","JPerez3001, tochangUCSD, mbeerifeldman, ethanucsd",4.0
+Group014,"Kyra Brandt, Stephen Rabin, Bobby Baylon, Nathaniel Mackler, Jayson Gutierrez","A16195757, A16138290, A17233593, A16579484, A16166652","KBrandt57, srabin-cmd, Bobbybeatzdev, jay-matz, nmackler",5.0
+Group015,"Christian Kim, Sebastian Algharaballi-Yanow, Ian Pearson, Laurensius Junaidy","A16132108, A16314698, A16671890, A16617195","c5k1m, sebastianalgharaballi, iepearson02, LaurensiusJunaidy",4.0
+Group016,"Yuntian Wu, Wenyu Zhong, Shiyuan Wang, Xinhao Zhao","A17200680, A17169057, A17166171, A16355760","kdaeve, Eunggseo, moonwsy, XinhaoZhao",4.0
+Group017,"Jacob Lamadrid, Keate Ehrenburg, Omri Habot, Aleksandar Bumbalov","A16282531, A15322099","j-lamadrid, keateehrenburg",2.0
+Group018,"Sung Cho, Simon Zheng, Albert Henderson, Zhengyuan Zhou, Abhinav Chandra","A15480541, A16193539, A16384282, A16146369, A16517764","Simon-Zheng99,AlbertHender,AndrewZ987,Abhinav24831,s8cho",5.0
+Group019,"Dou Kwark, Christopher Myers, Selim Shaalan","A15741627, A17234842, A15929044","DouHoonKwark,chessmyers,SelimUCSD",3.0
+Group020,"Niko Calsada, Serina Khanna, Alyssa Fleschner, Dhathry Doppalapudi","A15352545, A15851279, A16127164, A16298078","dhathry, helloserina, afleschner, kneeko97",4.0
+Group021,"Darius Azure, Miko Brown, Ziyu Wang","A15786330, A16237566, A16149329","MajorDarius, mikobrown, ZiyuWang0113",3.0
+Group022,"Neil Bajaj, Shenova Davis, Pratheek Sankeshi, Ria Singh","A16218424, A16314363, A16279195, A16195380","nb110240, shenovad, Ria-Singh, psankesh9",4.0
+Group023,"Zhangxiang Lu, Brian Chen, Jeffrey Chen, Vivian Cheung","A16029521, A16135072, A16135050, A17151741","brichen,JeffrChen,vivianacheung,luzhangxiang",4.0
+Group024,"Jorge Acevedo, Rohil Ahuja, Abraham Torok, Brinda Narayanan","A15834274, A16041299, A15890615, A16670728","jorgeacevedo13, ahujar27, bvnarayanan, abetorok",4.0
+Group025,"Wesley Nguyen, Neel Dhar, Jay Buensuceso, Juhita Vijjali","A15947818, A15839185, A17213233, A15669338","wesleyynguyenn, juhitavijjali, flashruler, a3dhar",4.0
+Group026,"Winah Ruiz, Deepansha Singh, Ilya Kogan, Raina Song","A16677648, A16468249, A15424869, A17696287","Wfelicity, Algorithmist-Girl, koilya, rainasong",4.0
+Group027,"Irisa Jin, Mizuho Fukuda, Varsha Sampath, Maya Que","A16386965, A16310384, A16294875, A16426598","irijin, MF02511, varshasampath20, m-que",4.0
+Group028,"Jared Singletary, Eric Lin, Finn St-John, Cecilia Martinez","A16166835, A16266295, A16133473, A17203678","J-Singletary, etlin3, stjohnfinn, cecilia-martinez",4.0
+Group029,"Zhilin Kong, Kai Yeung, Haixin Chen, Haokai Mao","A17173283, A14260065, A16534853, A17185018","ZhilinK,haixinchen2022,KaiMHK,Kyy006",4.0
+Group030,"Jiaqi Liu, Andrew Lona, Naomi Chin, Andy Chow","A59019538, A13164368, A15861575, A16197124","fmshobojoe,na0mich1n,AndyLAndrew,AndyCesium",4.0
+Group031,"Zaki Ahmed, Shay Samat, Aditya Tomar, Akhil Vasanth","A16671152, A16816403, A17162996, A16807774","adi-tomar,ssamat,zaki1503,AVGithub-1",4.0
+Group032,"Vincent Rothenberg, Alden Yue, Nil Beserler, Aryan Safari","A16534656, A15902882, A16312351, A16091880","vrothenbergUCSD,aldenyue,NilBeserler,aryan3844",4.0
+Group033,"Gege Bei, Sikai Liang, Chenxi Li, Jinyi Zhao, Jialong Guo","A16356724, A16839298, A16341810, A16315154, A15851883","Maggiebgg, Skyi1232123, Jinyiz, MinilordKREE, JialongG",5.0
+Group034,"Brooks(Ruijia) Niu, Jiaying Yang, Hannah Lin, Xiaofei Teng","A16147262, A16351140",jiaying6429; brooksniu,2.0
+Group035,"Zehong Li, Jamie Wei, Sarita Raghunath, Nicole Rangan","A15852954, A15921963, A16425750, A15011222","dominik0420, s1raghun, nicolerangan, JamieWei21",4.0
+Group036,"Sebastian Olivas Beltran, Lucas Giumarra, Yu-Hsuan Chi, Tom Hocquet","A16031413, A15907438, A16314326, A16661125","Seb0071,lugiumarra,philchi,tomok59",4.0
+Group037,"Kira Fleischer, Kalam Park, Cray Minor","A16248495, A15920895, A15863773","kirafleischer, crayminor, kalampark",3.0
+Group038,"Dominik Zeman, Ryan Kan, Himanshi Gupta","A16218261, A17009505, A15804892","DomZeman,kan-ryan,munch-g",3.0
+Group039,"Abdulrahman Sinjab, Muhammad Arsani, Sarah Kagzi","A17216655, A16468481, A16155549","SinjabPortal, adli0029, SarahKagzi",3.0
+Group040,"Cameron Faulkner, Atul Nair, Nikhil Hegde, Qianxi Gong","A15957201, A17129206, A16261926, A15986849","Devouringbowl57, nihegde18, atooln",4.0
+Group041,"Trevor Bonaiuto, Wallace Wefel, Tekin Gunasar, Weixiang Zhao","A15387764, A16381599","tbonaiut, wewefel. Just wanted to add a quick message here to apologize for submitting the form late, we were searching for at least a 3rd but had no luck, so hopefully just us two isn't too big of a deal.",2.0
+Group042,"Jesus Mendez, Masiah Manzano, Armaan Johal, Zecheng Li","A15857858, A15876991",,2.0
+Group043,"Ye Win, Jackson Teel, Garrett Dungca, Carly Freedman",,,
+Group044,"Gyujin Hong,Taolan Taolan,Ryan Kabbes,Tej Nair",,,
+Group045,"Tej Nair,Stanley Sisson,Angel Olivas,Sang Tran",,,
+Group046,"William Lutz,Peter Barnett,Ricardo Sedano",,,
